@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">Dashboard</h2>
+        <p>Welcome to the dashboard!</p>
+        <form method="POST">
+            <div class="form-group">
+                <label for="email">Email Content:</label>
+                <textarea id="email" name="email" rows="10" class="form-control" placeholder="Paste email content here" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Tell me if it’s phishing or safe</button>
+        </form>
+        <a href="{{ url_for('logout') }}" class="btn btn-secondary mt-3">Logout</a>
+    </div>
+</body>
+</html>
